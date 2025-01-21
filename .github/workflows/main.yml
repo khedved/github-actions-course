@@ -3,11 +3,11 @@ name: CI
 
 on:
    push:
-      branches:[main]
+      branches: [ main ]
    pull_request:
-       branches:[main]
+      branches: [ main ]
 # Allow you to run the workflow manually from actions tab
-workflow_dispatch:
+   workflow_dispatch:
 
 # a workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:

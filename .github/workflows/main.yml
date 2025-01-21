@@ -3,8 +3,8 @@ name: CI
 
 on:
    push:
-       branches:[main]
-    pull_request:[main]
+      branches:[main]
+   pull_request:
        branches:[main]
 # Allow you to run the workflow manually from actions tab
 workflow_dispatch:

@@ -1,0 +1,22 @@
+name: Reusable workflow caller
+
+on:
+  push:
+    branches: none
+  pull_request:
+    branches: none
+  workflow_dispatch:
+
+jobs:
+  call-workflow-A:
+    uses: khedved/github-actions-course/.github/workflows/vedang-reusable-workflow.yaml@main
+    with:
+      username: khedved
+    secrets:
+      token: 'nothing'
+  call-workflow-B:
+    uses: khedved/github-actions-course/.github/workflows/vedang-reusable-workflow.yaml@main
+    with:
+      username: yatiom
+    secrets:
+      token: 'nothing'
